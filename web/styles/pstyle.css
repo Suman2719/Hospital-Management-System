@@ -1,0 +1,71 @@
+/* General Body */
+body {
+    background: yellow !important;
+}
+
+.dashboard-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #f9f9f9);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper for content */
+.dashboard-wrapper {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.dashboard-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+/* Title */
+.dashboard-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #333333;
+}
+
+/* Container for links */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Dashboard links (buttons) */
+.dashboard-link {
+    display: block;
+    text-decoration: none;
+    padding: 12px 20px;
+    background: #1976d2;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.dashboard-link:hover {
+    background: #125a9c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Special style for Logout button */
+.dashboard-link.logout {
+    background: #e53935;
+}
+
+.dashboard-link.logout:hover {
+    background: #b71c1c;
+}

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+    color: #333;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;      /* allow scrolling */
+  scroll-behavior: smooth;
+  gap: 20px;
+  width: 70%;            /* visible window for cards */
+  padding: 10px;
+}
+
+.box { min-width: 200px; } /* ensure content is wider than container */
+
+
+.carousel::-webkit-scrollbar {
+    display: none; /* hide scrollbar */
+}
+
+.module-box {
+    min-width: 180px;
+    height: 180px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    text-align: center;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.module-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.module-box img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.module-box a {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.module-box a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.arrow {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.arrow:hover {
+    background: #0056b3;
+}

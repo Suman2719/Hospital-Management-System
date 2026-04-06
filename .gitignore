@@ -1,0 +1,18 @@
+# NetBeans build output
+/build/
+/dist/
+/nbproject/private/
+
+# JSP and Java build artifacts
+*.class
+*.jar
+*.war
+
+# IDE files
+*.log
+*.tmp
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
